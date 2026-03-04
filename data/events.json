@@ -16,28 +16,28 @@
         "name": "Chris Sells",
         "designation": "",
         "organization": "Meta, Google, Microsoft, Intel",
-        "photo": "https://media.licdn.com/dms/image/v2/C4E03AQHJJKnM8piq5g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516166602645?e=1770249600&v=beta&t=Yzu0PgdGsU4UB2LXriWgdF82RBRCKfiQyC24F8AOQ2g",
+        "photo": "/speakers/Chris Sells.jpg",
         "profileLink": "https://www.linkedin.com/in/csells/"
       },
       {
         "name": "Santosh Yadav",
         "designation": "Principal Developer Advocate",
         "organization": "CodeRabbit",
-        "photo": "https://media.licdn.com/dms/image/v2/D4D03AQEpQt7RxOJGUw/profile-displayphoto-scale_400_400/B4DZtq1koKH4Ag-/0/1767023988339?e=1770249600&v=beta&t=Amsf0RtB2zNlJyrCshAuqx2khsVOfig_J8mO69zZE4U",
+        "photo": "/speakers/Santosh Yadav.jpg",
         "profileLink": "https://www.linkedin.com/in/santoshyadavdev/"
       },
       {
         "name": "Vanshika Agarwal",
         "designation": "Software Engineer",
         "organization": "Google",
-        "photo": "https://media.licdn.com/dms/image/v2/D5603AQHe83Ujd5ymgw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726466712872?e=1770249600&v=beta&t=20pLFic-EJr34BCErQpGb8O4IzPIa6gAVWHhCPL41NY",
+        "photo": "/speakers/Vanshika Agarwal.jpg",
         "profileLink": "https://www.linkedin.com/in/vanshika-agarwal28/"
       },
       {
         "name": "Praveen Kumar",
         "designation": "Associate Director",
         "organization": "Fitch Group Inc.",
-        "photo": "https://media.licdn.com/dms/image/v2/D5603AQHBGaUagLWnZQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705905277353?e=1770249600&v=beta&t=2GHDykk270hoxsLtCGDqw3hyNmQjnbzZsRdU21MfxF4",
+        "photo": "/speakers/Praveen Kumar.jpg",
         "profileLink": "https://www.linkedin.com/in/praveentech/"
       }
     ],
@@ -145,7 +145,7 @@
         "name": "Praveen Kumar",
         "designation": "Associate Director",
         "organization": "Fitch Group Inc.",
-        "photo": "https://media.licdn.com/dms/image/v2/D5603AQHBGaUagLWnZQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705905277353?e=1770249600&v=beta&t=2GHDykk270hoxsLtCGDqw3hyNmQjnbzZsRdU21MfxF4",
+        "photo": "/speakers/Praveen Kumar.jpg",
         "profileLink": "https://www.linkedin.com/in/praveentech/"
     }
   ],
