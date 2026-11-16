@@ -17,7 +17,7 @@ const resources = [
     { title: "Past Organizations", link: "/past-organizations" },
     // { title: "Organisation Brochure", link: "https://drive.google.com/file/d/117rMEB4imPUtNh0RtCQ-A-FK5wGMWM-y/view?usp=sharing" },
     // { title: "Sponsorship Brochure", link: "https://drive.google.com/file/d/1PoIAPuFCb9t3JXuMxfALirBnIrGs9GmT/view?usp=sharing" },
-    { title: "WoC 6.0 Policies & Guidelines", link: "https://www.notion.so/Winter-of-Code-5-0-Official-Policies-Legal-Guidelines-2a6489c63bf4806593abcfd35a481976?source=copy_link" },
+    { title: "WoC 6.0 Policies & Guidelines", link: "https://app.notion.com/p/Winter-of-Code-6-0-Official-Policies-Legal-Guidelines-419e8dbda883809c9e55e4e7c6bbc3d3?source=copy_link" },
 ]
 
 const Footer = () => {
