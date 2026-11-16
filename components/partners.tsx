@@ -62,7 +62,7 @@ const Partners = () => {
 
             {/* APPLY BUTTON */}
             <div className="flex w-full justify-center mt-[5%] px-4">
-                <a href="https://forms.gle/X2H524b3NjuUvESbA" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex justify-center">
+                <a href="https://forms.gle/JYchGpsm9vbtZYe17" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex justify-center">
                     <button
                         className="glow-button w-full sm:w-auto"
                         style={{
