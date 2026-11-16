@@ -7,7 +7,7 @@ import Script from "next/script";
 import ClientErrorLogger from "@/components/ClientErrorLogger";
  
 export const metadata: Metadata = {
-  title: 'Winter of Code 5.0',
+  title: 'Winter of Code 6.0',
   description: 'Loading...',
 };
 

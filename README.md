@@ -1,6 +1,6 @@
-# Winter of Code 5.0 — Official Website
+# Winter of Code 6.0 — Official Website
 
-Winter of Code 5.0 is an open source winter internship-style program that connects students and contributors with open source projects, mentors, and organizers to build meaningful projects, learn collaboratively, and contribute to the community.
+Winter of Code 6.0 is an open source winter internship-style program that connects students and contributors with open source projects, mentors, and organizers to build meaningful projects, learn collaboratively, and contribute to the community.
 
 ## Quicklinks
 - Website code: This repository (Next.js + React)
@@ -79,4 +79,4 @@ For questions about the program, sponsorships, or media: replace-with-your-conta
 
 ---
 
-Contributions, ideas, and feedback are welcome — let's make Winter of Code 5.0 a great open source learning experience!
+Contributions, ideas, and feedback are welcome — let's make Winter of Code 6.0 a great open source learning experience!
