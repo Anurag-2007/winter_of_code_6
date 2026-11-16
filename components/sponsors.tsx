@@ -75,7 +75,7 @@ const Sponsors = () => {
 
             {/* Apply Button */}
             <div className="flex w-full justify-center mt-[5%] px-4">
-                <a href="https://www.notion.so/Sponsor-Application-Guide-Winter-of-Code-5-0-2b5489c63bf480568f41f626dea2e7b2?source=copy_link" target='_blank' rel="noopener noreferrer" className="w-full sm:w-auto flex justify-center">
+                <a href="https://app.notion.com/p/Sponsor-Application-Guide-Winter-of-Code-6-0-41ae8dbda8838099ace7d99da340e763?source=copy_link" target='_blank' rel="noopener noreferrer" className="w-full sm:w-auto flex justify-center">
                     <button
                         className="glow-button w-full sm:w-auto"
                         style={{

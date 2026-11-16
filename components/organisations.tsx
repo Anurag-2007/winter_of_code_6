@@ -43,7 +43,7 @@ const Organisations = () => {
                         )}
                     </div>
                     <div className="flex w-full justify-center mt-[5%] px-4">
-                        <a href="https://www.notion.so/Organisation-s-Application-Guide-Winter-of-Code-5-0-2ad489c63bf480d0a423d3ce5aceb69d?source=copy_link" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex justify-center">
+                        <a href="https://app.notion.com/p/Organisation-s-Application-Guide-Winter-of-Code-6-0-41ae8dbda8838066bd92de9ff7dfa799?source=copy_link" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex justify-center">
                             <button
                                 className="glow-button w-full sm:w-auto"
                                 style={{
