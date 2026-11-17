@@ -23,7 +23,7 @@ const TeamCard = ({ name, bio }: Teammate) => {
           src={`/team/${name}.jpg`}
           alt={`${name} photo`}
           fill
-          className="object-cover object-center"
+          className="object-cover object-top"
           sizes="(max-width: 768px) 100vw, 20vw"
         />
       </div>
