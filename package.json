@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "site:update": "node scripts/update-site.mjs",
+    "site:check": "node scripts/update-site.mjs --check"
   },
   "dependencies": {
     "@vercel/speed-insights": "^1.2.0",

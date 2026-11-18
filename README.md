@@ -9,11 +9,11 @@ Winter of Code 6.0 is an open source winter internship-style program that connec
 - Code of Conduct: See CODE_OF_CONDUCT.md in this repo
 
 ## Key dates
-- Applications open: TBA
+- Registration: 20 Dec 2026 – 31 Dec 2026
 - Program dates: TBA — typically a 6–12 week winter term
-- Deadline to apply: TBA
+- Deadline to apply: 31 Dec 2026
 
-(Replace TBA with actual dates once confirmed.)
+See `data/timeline.json` for the full schedule.
 
 ## Who can participate
 - Students & early-career developers: Apply to be a contributor on projects.
@@ -27,6 +27,9 @@ Winter of Code 6.0 is an open source winter internship-style program that connec
 4. Follow the mentor's onboarding instructions and open PRs early for feedback.
 
 Mentors: create clear onboarding docs, tag starter issues, and be available for code reviews & pair sessions.
+
+## Updating the site
+See [UPDATING.md](UPDATING.md) — edition, registration dates and events are changed with `npm run site:update`.
 
 ## Local development (for this website)
 This project was bootstrapped with Next.js. To run locally:
@@ -67,9 +70,6 @@ All participants must follow the Code of Conduct. Be respectful, inclusive, and 
 ## Communication
 - Primary channels: (Discord / Slack / Mailing list) — replace with your links.
 - Use issue trackers and PRs for technical discussions; use chat for real-time coordination.
-
-## Sponsors & Organizers
-Thank you to our sponsors and partner orgs. Add sponsor names, logos and links here.
 
 ## License
 This repository and website source are released under the [MIT License](LICENSE) unless otherwise specified.
