@@ -7,19 +7,25 @@ import navline from '../public/navline.svg';
 // Combined navigation items in the requested order
 const menuItems = [
     { name: "Timeline", href: "/#timeline" },
+    { name: "Organizations", href: "/#orgs" },
+    { name: "Sponsors", href: "/#sponsors" },
     { name: "Projects", href: "/projects" },
     { name: "FAQs", href: "/faqs" },
+    { name: "Partners", href: "/community-partners" },
     { name: "Team", href: "/team" },
 ];
 
 // Desktop navigation split
 const navigationleft = [
     { name: "Timeline", href: "/#timeline", current: false },
+    { name: "Organizations", href: "/#orgs", current: false },
+    { name: "Sponsors", href: "/#sponsors", current: false },
     { name: "Events", href: "/events", current: false },
 ];
 const navigationright = [
     { name: "Projects", href: "/projects", current: false },
     { name: "FAQs", href: "/faqs", current: false },
+    { name: "Partners", href: "/community-partners", current: false },
     { name: "Team", href: "/team", current: false },
 ];
 
