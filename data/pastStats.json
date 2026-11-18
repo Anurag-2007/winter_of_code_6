@@ -1,4 +1,24 @@
 [
+       {
+        "name": "Participants",
+        "data": "5000+",
+        "version": "5"
+    },
+    {
+        "name": "Organisations",
+        "data": "18+",
+        "version": "5"
+    },
+    {
+        "name": "Community Partners",
+        "data": "40+",
+        "version": "5"
+    },
+    {
+        "name": "Sponsors",
+        "data": "10+",
+        "version": "5"
+    },
     {
         "name": "Participants",
         "data": "5100+",

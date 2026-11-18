@@ -80,6 +80,12 @@ const PastOrganizations = () => {
             </div>
 
             <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
+                {pastStatData.map((stat, index) =>
+                    stat.version === "5" ? <PastStatCard key={index} stats={stat} /> : ""
+                )}
+            </div>
+
+            <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
                 {pastOrgData.map((org, index) =>
                     org.version === "5" ? <PastOrgCard key={index} org={org} /> : ""
                 )}
