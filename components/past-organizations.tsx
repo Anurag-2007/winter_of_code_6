@@ -26,7 +26,7 @@ const PastOrgCard = ({ org }: { org: PastOrg }) => {
     return (
         <a
             className="relative w-[45%] sm:w-[30%] gap-[2%] my-[2%] hover:scale-105 duration-700"
-            href={org.link}
+            href={org.link || undefined}
             rel="noopener noreferrer"
             target="_blank"
         >
@@ -68,6 +68,21 @@ const PastOrganizations = () => {
         <section className='w-full h-full mx-auto pt-[10%]' id="past-orgs">
             <div className='text-center text-orgs font-kleemax text-scale-50 drop-shadow-gold'>
                 PAST ORGANIZATIONS
+            </div>
+
+            {/* Winter of Code 5.0 */}
+            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-16">
+                <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
+                <div className="relative flex justify-center text-scale-30-5 bg-black text-brand text-nowrap font-kleemax">
+                    <span className="text-nowrap pt-[1.5%] font-kleemax">WINTER OF CODE 5.0</span>
+                </div>
+                <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
+            </div>
+
+            <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
+                {pastOrgData.map((org, index) =>
+                    org.version === "5" ? <PastOrgCard key={index} org={org} /> : ""
+                )}
             </div>
 
             {/* Winter of Code 4.0 */}
