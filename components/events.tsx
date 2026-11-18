@@ -1,7 +1,7 @@
 import Image from "next/image";
 import projectbanner from "../public/projectbanner.svg";
 import { useState, useMemo } from "react";
-import eventsData from "../data/events.json";
+import rawEvents from "../data/events.json";
 import { FaCalendar } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa6";
 import { MdLocationPin } from "react-icons/md";
@@ -35,6 +35,9 @@ interface EventData {
   agenda: string[];
   recordingLink?: string; // Add optional recording link
 }
+
+// events.json may be empty (between editions), so give it an explicit type
+const eventsData = rawEvents as unknown as EventData[];
 
 const parseTimeToDate = (dateStr: string, timeStr?: string, fallbackTime = "00:00") => {
   const [day, month, year] = dateStr.split("-").map(Number);
@@ -469,6 +472,29 @@ const Events = () => {
 
     return filtered;
   }, [searchTerm, sortBy, filterStatus, filterType]);
+
+  // Between editions data/events.json is []: show a Coming Soon state instead of an empty dashboard
+  if (eventsData.length === 0) {
+    return (
+      <section className="w-full min-h-screen mx-auto pt-[10%] pb-[10%] bg-black" id="events">
+        <div className="px-[5%]">
+          <div className="text-center text-brand font-kleemax text-scale-50 drop-shadow-blue mb-12">
+            EVENTS
+            <div className="-z-10 w-[25%] absolute left-[50%] top-0 translate-x-[-50%] translate-y-[-40.5%]">
+              <Image className="mx-auto w-full" src={projectbanner} alt="eventsbanner" />
+            </div>
+          </div>
+          <div className="w-full text-center py-24">
+            <p className="text-brand font-kleemax text-scale-40 drop-shadow-blue mb-4">COMING SOON</p>
+            <p className="text-[#CADEFF] font-chakra">
+              Workshops, talks and ceremonies will be announced here. Stay tuned!
+            </p>
+          </div>
+        </div>
+        <hr className="flex mt-[10%] w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black" />
+      </section>
+    );
+  }
 
   return (
     <section className="w-full min-h-screen mx-auto pt-[10%] pb-[10%] bg-black" id="events">

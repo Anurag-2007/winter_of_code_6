@@ -5,6 +5,7 @@ import logo from '../public/logo.svg'
 import discord from '../public/discord.svg'
 import BorderText from '@/components/bordertext'
 import JumbleText from '@/components/jumble'
+import site from '../data/site.json'
 import Snowfall from 'react-snowfall'
 import { useEffect, useState } from "react";
 
@@ -38,14 +39,14 @@ const Register = () => {
                 <hr className="w-full h-[0.25vw] bg-gradient-to-l from-brand"/>
                 <div className="relative flex justify-center text-scale-30-5 bg-black drop-shadow-blue px-[1.5%] border-[0.25vw] text-brand hover:scale-110 duration-700 z-[1000]">
                     <div className='absolute top-right-arrow right-[0.375vw] top-[0.3vw] sm:top-[0.45vw] mb-4'></div>
-                    <Link href="https://woc6.devfolio.co" target="_blank" rel="noopener noreferrer" className="text-nowrap pt-[1.5%] font-kleemax">
+                    <Link href={site.registrationLink} target="_blank" rel="noopener noreferrer" className="text-nowrap pt-[1.5%] font-kleemax">
                         <JumbleText text="REGISTER NOW" id="registerhere2"/>
                     </Link>
                 </div>
                 <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
                 {/* <div 
 	                className="apply-button" 
-	                data-hackathon-slug="winter-of-code-5" 
+	                data-hackathon-slug="winter-of-code-6" 
 	                data-button-theme="light"
                 ></div> */}
             </div>
