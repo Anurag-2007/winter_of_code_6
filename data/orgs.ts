@@ -1,5 +1,5 @@
 type Mentor = {
-  name: string;
+  name?: string;
   desc: string;
   discord?: string;
   email?: string;
