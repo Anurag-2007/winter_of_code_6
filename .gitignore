@@ -36,8 +36,9 @@ yarn-error.log*
 next-env.d.ts
 
 #test
-/scripts
+/scripts/
 /past-orgs-v5.patch
 /winter_of_code_6.bundle
 /UPDATING.md
 /*.patch
+/*.bundle
