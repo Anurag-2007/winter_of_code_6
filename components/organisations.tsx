@@ -33,7 +33,7 @@ const Organisations = () => {
                 ORGANISATIONS
             </div>
             {TBA ?
-                <div className="pt-[5%] flex w-full justify-center text-[#C23B30] drop-shadow-red font-kleemax text-scale-30 font-semibold">
+                <div className="pt-[5%] flex w-full justify-center text-brand drop-shadow-blue font-kleemax text-scale-30 font-semibold">
                     COMING SOON
                 </div>
                 :
