@@ -13,8 +13,8 @@ interface VideoResource {
   videoId: string;
 }
 
-// Dummy data for testing
-const videoResources: VideoResource[] = videos;
+// videos.json may be empty (shows "Coming Soon"), so give it an explicit type
+const videoResources = videos as unknown as VideoResource[];
 
 const VideoCard = ({ video }: { video: VideoResource }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -180,6 +180,29 @@ const Resources = () => {
 
     return filtered;
   }, [searchTerm, sortBy, selectedTag]);
+
+  // data/videos.json is [] -> show a Coming Soon state instead of an empty search page
+  if (videoResources.length === 0) {
+    return (
+      <section className="w-full min-h-screen mx-auto pt-[10%] pb-[10%] bg-black" id="resources">
+        <div className="px-[5%]">
+          <div className="text-center text-brand font-kleemax text-scale-50 drop-shadow-blue mb-12">
+            RESOURCES
+            <div className="-z-10 w-[25%] absolute left-[50%] top-0 translate-x-[-50%] translate-y-[-40.5%]">
+              <Image className="mx-auto w-full" src={projectbanner} alt="resourcesbanner" />
+            </div>
+          </div>
+          <div className="w-full text-center py-24">
+            <p className="text-brand font-kleemax text-scale-40 drop-shadow-blue mb-4">COMING SOON</p>
+            <p className="text-[#CADEFF] font-chakra">
+              Guides and learning resources will be shared here. Stay tuned!
+            </p>
+          </div>
+        </div>
+        <hr className="flex mt-[10%] w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black" />
+      </section>
+    );
+  }
 
   return (
     <section className="w-full h-full mx-auto pt-[10%] bg-black" id="resources">
