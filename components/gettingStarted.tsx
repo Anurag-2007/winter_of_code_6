@@ -1,3 +1,4 @@
+import site from "../data/site.json";
 import Link from 'next/link';
 import Image from 'next/image'
 import arrow from '../public/arrow.svg'
@@ -39,7 +40,7 @@ const timelineData: TEvent[] = [
     },
     {
         startDate: "STEP 3",
-        title: "Attend WoC 5.0 Inauguration",
+        title: `Attend WoC ${site.edition} Inauguration`,
         description:
             "On 10 January, join for the official kickoff covering program walkthrough, coding expectations, evaluations, and communication guidelines."
     },
@@ -114,7 +115,7 @@ const TimelineCard = ({ event, index }: { event: TEvent; index: number }) => {
     );
 };
 
-const description = "Winter of Code is a 3-month-long open-source journey brought to you by GDG on campus IIIT Kalyani (formerly known as GDSC IIIT Kalyani) , in collaboration with Google Developer Groups on Campus. Modeled after Google Summer of Code (GSoC), this program offers an exciting opportunity for developers to dive into the world of open source, contribute to impactful projects, and collaborate with like-minded peers. Whether you're a seasoned coder or just starting out, Winter of Code 5.0 is your chance to enhance your skills, make meaningful contributions, and become part of the global open-source community."
+const description = `Winter of Code is a 3-month-long open-source journey brought to you by GDG on campus IIIT Kalyani (formerly known as GDSC IIIT Kalyani) , in collaboration with Google Developer Groups on Campus. Modeled after Google Summer of Code (GSoC), this program offers an exciting opportunity for developers to dive into the world of open source, contribute to impactful projects, and collaborate with like-minded peers. Whether you're a seasoned coder or just starting out, Winter of Code ${site.edition} is your chance to enhance your skills, make meaningful contributions, and become part of the global open-source community.`
 const GettingStarted = () => {
     return (
         <section className='w-full h-full mx-auto pt-[10%] bg-black' id="timeline">

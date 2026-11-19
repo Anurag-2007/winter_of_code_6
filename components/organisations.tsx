@@ -6,7 +6,8 @@ interface Org {
     name: string;
     website: string;
 }
-const orgsData: Org[] = organisations;
+// organisations.json may be empty ([] = not announced yet -> "COMING SOON" is shown)
+const orgsData = organisations as unknown as Org[];
 
 const OrgCard = ({ org }: { org: Org }) => {
     return (
@@ -25,23 +26,24 @@ const OrgCard = ({ org }: { org: Org }) => {
 
 
 const Organisations = () => {
-    var TBA = false;
+    const TBA = orgsData.length === 0; // no organisations in data/organisations.json -> not announced
     return (
         <section className='w-full h-full mx-auto pt-[10%] bg-black' id="orgs">
             <div className='text-center text-orgs font-kleemax text-scale-40 drop-shadow-gold'>
                 ORGANISATIONS
             </div>
             {TBA ?
-                <div className="pt-[5%] flex w-full justify-center text-[#C23B30] drop-shadow-red font-kleemax text-scale-30 font-semibold">
-                    TO BE ANNOUNCED
+                <div className="pt-[5%] flex w-full justify-center text-brand drop-shadow-blue font-kleemax text-scale-30 font-semibold">
+                    COMING SOON
                 </div>
                 :
-                <>
-                    <div className='w-full p-[10%] sm:p-[5%] gap-[2%] flex justify-center flex-wrap'>
-                        {orgsData.map((org, index) =>
-                            <OrgCard key={index} org={org} />
-                        )}
-                    </div>
+                <div className='w-full p-[10%] sm:p-[5%] gap-[2%] flex justify-center flex-wrap'>
+                    {orgsData.map((org, index) =>
+                        <OrgCard key={index} org={org} />
+                    )}
+                </div>
+            }
+            <>
                     <div className="flex w-full justify-center mt-[5%] px-4">
                         <a href="https://app.notion.com/p/Organisation-s-Application-Guide-Winter-of-Code-6-0-41ae8dbda8838066bd92de9ff7dfa799?source=copy_link" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex justify-center">
                             <button
@@ -112,8 +114,7 @@ const Organisations = () => {
                         inset 0 0 0.5em 0.25em var(--glow-color);
                 }
             `}</style>
-                </>
-            }
+            </>
             <hr className="flex mt-[10%] w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black" />
         </section>
     );

@@ -9,6 +9,7 @@ import discord from '../public/discordlogo.svg'
 import linkedin from '../public/linkedin.svg'
 import mailbox from '../public/mailbox.svg'
 import submit from '../public/submit.svg'
+import site from '../data/site.json'
 
 const resources = [
     { title: "Resources", link: "/resources" },
@@ -17,7 +18,7 @@ const resources = [
     { title: "Past Organizations", link: "/past-organizations" },
     // { title: "Organisation Brochure", link: "https://drive.google.com/file/d/117rMEB4imPUtNh0RtCQ-A-FK5wGMWM-y/view?usp=sharing" },
     // { title: "Sponsorship Brochure", link: "https://drive.google.com/file/d/1PoIAPuFCb9t3JXuMxfALirBnIrGs9GmT/view?usp=sharing" },
-    { title: "WoC 6.0 Policies & Guidelines", link: "https://app.notion.com/p/Winter-of-Code-6-0-Official-Policies-Legal-Guidelines-419e8dbda883809c9e55e4e7c6bbc3d3?source=copy_link" },
+    { title: `WoC ${site.edition} Policies & Guidelines`, link: "https://app.notion.com/p/Winter-of-Code-6-0-Official-Policies-Legal-Guidelines-419e8dbda883809c9e55e4e7c6bbc3d3?source=copy_link" },
 ]
 
 const Footer = () => {

@@ -12,10 +12,9 @@ import projectbanner from "../public/projectbanner.svg";
 import { MdEmail } from "react-icons/md";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { orgs } from "@/data/orgs"
-import { useParams } from "next/navigation"
 
 type Mentor = {
-    name: string
+    name?: string
     desc: string
     discord?: string
     email?: string
@@ -262,10 +261,7 @@ const IconLink = ({
 }
 
 const OrgShowcase = () => {
-    const params = useParams()
-    const slug = params.slug as string
-
-    const org = orgs[slug]
+    const org = orgs.Openprinting
 
     return (
         <section className="relative isolate overflow-x-hidden w-full bg-gradient-to-b from-black via-black to-black pb-20 pt-4">

@@ -5,6 +5,7 @@ import wocg from '../public/wocg.svg'
 import React from 'react'
 import Link from 'next/link'
 import JumbleText from '@/components/jumble'
+import site from '../data/site.json'
 
 const BorderText = () => {
   const text = Array.from("WINTEROFCODE")
@@ -67,7 +68,7 @@ const BorderText = () => {
         <hr className="flex-1 min-w-0 max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand border-0" />
 
         <Link
-          href="https://woc6.devfolio.co"
+          href={site.registrationLink}
           target="_blank"
           rel="noopener noreferrer"
           className="relative shrink-0 flex justify-center items-center text-scale-30-5 bg-black drop-shadow-blue px-[1.5%] border-[0.25vw] text-brand hover:scale-105 duration-500 cursor-pointer"

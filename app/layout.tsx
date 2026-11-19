@@ -5,9 +5,10 @@ import Structure from "@/components/structure";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from "next/script";
 import ClientErrorLogger from "@/components/ClientErrorLogger";
+import site from "../data/site.json";
  
 export const metadata: Metadata = {
-  title: 'Winter of Code 6.0',
+  title: `Winter of Code ${site.edition}`,
   description: 'Loading...',
 };
 

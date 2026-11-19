@@ -1,20 +1,14 @@
 import Image from 'next/image';
+import sponsorsJson from '../data/sponsors.json';
 
-const SponsorData: string[][] = [
-    ["Devfolio", "Fueler"], // Platinum
-    ["OSEN"], // Diamond
-    ["ETHIndia", "interviewBuddy"], // Gold
-    ["aops", "Keploy"], // Silver
-    [], // Bronze
-    ["xyz"], // Domain Partner
-    ["StockEdge"], // Knowledge Partner
-    ["Wyntrix"], // Career Partner
-];
+// Tier-by-tier sponsor names live in data/sponsors.json (same order as `tier` below).
+// [] means sponsors are not announced yet -> "COMING SOON" is shown.
+const SponsorData = sponsorsJson as unknown as string[][];
 
 const tier = ["Platinum", "Diamond", "Gold", "Silver", "Bronze", "Domain Partner", "Knowledge Partner", "Career Partner"];
 
 const Sponsors = () => {
-    const TBA = false; // change to true if sponsors not announced
+    const TBA = SponsorData.every((tierData) => tierData.length === 0); // no sponsors in data/sponsors.json -> not announced
 
     // Map sponsor identifiers to actual image filenames in `/public/sponsors`.
     const sponsorFileMap: Record<string, string> = {
@@ -35,8 +29,8 @@ const Sponsors = () => {
 
             {/* If sponsors not announced */}
             {TBA ? (
-                <div className="pt-[5%] flex w-full justify-center text-[#C23B30] drop-shadow-red font-kleemax text-scale-30 font-semibold">
-                    TO BE ANNOUNCED
+                <div className="pt-[5%] flex w-full justify-center text-brand drop-shadow-blue font-kleemax text-scale-30 font-semibold">
+                    COMING SOON
                 </div>
             ) : (
                 <div className='w-full p-[10%] sm:p-[5%] flex flex-col'>
