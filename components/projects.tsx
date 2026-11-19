@@ -29,7 +29,8 @@ interface Project {
   mentors: Mentor[];
 }
 
-const projectData: Project[] = projects;
+// projects.json may be empty ([] = not announced yet -> "COMING SOON" is shown)
+const projectData = projects as unknown as Project[];
 
 const asset = {
   discord: discordlogo,
@@ -261,6 +262,29 @@ const Projects = () => {
 
     return filtered;
   }, [searchTerm, sortBy, selectedTech]);
+
+  // data/projects.json is [] -> show a Coming Soon state instead of an empty search page
+  if (projectData.length === 0) {
+    return (
+      <section className="w-full min-h-screen mx-auto pt-[10%] pb-[10%] bg-black" id="projects">
+        <div className="px-[5%]">
+          <div className="text-center text-brand font-kleemax text-scale-50 drop-shadow-blue mb-12">
+            PROJECTS
+            <div className="-z-10 w-[25%] absolute left-[50%] top-0 translate-x-[-50%] translate-y-[-40.5%]">
+              <Image className="mx-auto w-full" src={projectbanner} alt="projectbanner" />
+            </div>
+          </div>
+          <div className="w-full text-center py-24">
+            <p className="text-brand font-kleemax text-scale-40 drop-shadow-blue mb-4">COMING SOON</p>
+            <p className="text-[#CADEFF] font-chakra">
+              Projects will be announced here. Stay tuned!
+            </p>
+          </div>
+        </div>
+        <hr className="flex mt-[10%] w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black" />
+      </section>
+    );
+  }
 
   return (
     <section className="w-full h-full mx-auto pt-[10%] bg-black" id="projects">
