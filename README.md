@@ -9,7 +9,7 @@ Winter of Code 6.0 is an open source winter internship-style program that connec
 - Code of Conduct: See CODE_OF_CONDUCT.md in this repo
 
 ## Key dates
-- Registration: 20 Dec 2026 – 31 Dec 2026
+- Registration: 23 Nov 2026 – 31 Dec 2026
 - Program dates: TBA — typically a 6–12 week winter term
 - Deadline to apply: 31 Dec 2026
 

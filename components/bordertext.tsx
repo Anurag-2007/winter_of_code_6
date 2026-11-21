@@ -77,7 +77,7 @@ const BorderText = () => {
 
           <div className="whitespace-nowrap pt-[1.5%] font-kleemax">
             <JumbleText
-              text="REGISTER NOW"
+              text="REGISTRATIONS STARTING SOON"
               id="registerhere"
             />
           </div>
